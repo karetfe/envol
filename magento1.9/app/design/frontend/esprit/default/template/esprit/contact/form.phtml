@@ -1,0 +1,17 @@
+
+
+<form action="<?php echo $this->getSubmitURL() ?>" method="post">
+<?php echo $this->getBlockHtml('formkey') ?>
+    
+    <label for="">Nom: </label>
+    <input type="text" name="nom"/>
+    <label for="">Numero: </label>
+    <input type="text" name="numero"/>
+    <label for="">Adresse: </label>
+    <input type="text" name="adresse"/>
+    
+    <textarea name="message" rows="8" cols ="40"></textarea>
+    
+    <input type = "submit" name="name" value="submit">
+
+</form>

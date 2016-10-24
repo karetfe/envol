@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+
+  <module>
+      <Esprit_Contact>
+          <version>1.0.0</version>
+      </Esprit_Contact>
+  </module>    
+<global>
+        <blocks>        
+            <esprit_contact> 
+                <class>Esprit_Contact_Block</class>      
+            </esprit_contact>
+        </blocks>
+    <models>        
+        <esprit_contact>
+                <class>Esprit_Contact_Model</class>
+                <resourceModel>esprit_contact_resource</resourceModel>
+        </esprit_contact>
+        <esprit_contact_resource>
+            <class>Esprit_Contact_Model_Resource</class>
+            <entities>
+                <message>
+                    <table>esprit_contact_message</table>         
+                </message>          
+            </entities>
+        </esprit_contact_resource>
+    </models> 
+</global>
+  <frontend>
+    <routers>
+        <esprit_contact>
+            <use>standard</use>
+            <args>
+                <module>Esprit_Contact</module>
+                <frontName>contact</frontName>
+            </args>
+        </esprit_contact>
+    </routers>
+    <layout>
+        <updates>
+            <esprit_contact>
+                <file>esprit_contact.xml</file>
+            </esprit_contact>
+        </updates>
+    </layout>
+
+
+  </frontend>
+</config>
